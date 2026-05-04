@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from www.siccaad.unam.mx/media/materials/t1186/ejemplos.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Nov 2025 21:26:40 GMT -->
+
+<!-- Mirrored from www.siccaad.unam.mx/media/materials/t1447/ejemplos.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2026 18:57:36 GMT -->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Equipo 2"/><!--Autor-->
+	 
+	<meta name="Description" content="Estudio General del Sistema"/><!--Descripción del tutorial-->
+	<meta name="Keywords" content="Factores, Estudio, General, Sistema"/><!--Palabras clave-->
+	<meta name="robots" content="noindex, nofollow"/>
+	
+	<script src="https://www.siccaad.unam.mx/media/materials/t1186/media/js/jq.js" type="text/javascript"></script>
+	<script src="https://www.siccaad.unam.mx/media/materials/t1186/media/js/m.js" type="text/javascript"></script>
+	<script src="https://www.siccaad.unam.mx/media/materials/t1186/media/js/ui.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="https://www.siccaad.unam.mx/media/materials/t1186/media/css/ui.css" type="text/css" />
+	
+	<!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
+	<link rel="stylesheet" href="https://www.siccaad.unam.mx/media/materials/t1186/media/css/ejemplos.css" type="text/css" />
+
+</head>
+	<section class="main clearfix">
+		<section class="top">	
+			<img src="https://www.siccaad.unam.mx/media/materials/t1186/img/ejemBK.jpg" class="media" alt=""/>
+            <div class="wrapper content_header clearfix">
+                <center><h1 class="title"><br><h1><t>4. EJEMPLOS</t></center>
+			</div>
+        </section>
+
+		<section class="wrapper">
+			<div class="content"> 
+                <ul>
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>1. Sistema hospitalario (Registro de pacientes)</h3></li>
+         
+			        
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020a'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                    
+                    <strong><br> ❖ &emsp;<i>Desarrollo ejemplo 1 </i></strong>
+                    </a>
+                    <div style="display: none; margin-top: 10px;" id="hiddenText020a">
+                    <p>
+                    <h4>
+                    <br>
+                        <strong>Contexto:</strong> Un hospital regional busca desarrollar un sistema informático 
+                        que registre la atención de pacientes y genere reportes automáticos por 
+                        servicio médico, para reducir errores en el manejo de historiales clínicos.
+                        <br><br>
+                        <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej1.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 8: Sistema hospitalario) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020a1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020a1">
+                            <p><br>
+                                El documento inicial del proyecto solo mencionaba: 
+                                “El sistema debe registrar pacientes”. La falta de detalle 
+                                provocó confusión sobre qué información se debía almacenar 
+                                y cómo debía generarse el reporte médico.
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020a2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020a2">
+                            <p><br>
+                                Según Cristiá (2018, p. 15), un requerimiento de software es 
+                                una condición o capacidad que debe poseer el sistema para satisfacer 
+                                una necesidad o cumplir una norma específica.
+                                El requerimiento se redefine así:
+                                “El sistema debe permitir registrar nombre completo, edad, número de 
+                                expediente, diagnóstico y área médica de cada paciente, para generar 
+                                reportes diarios de atención por servicio.”
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020a3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020a3">
+                            <p><br>
+                                El requerimiento se vuelve medible y verificable, evitando 
+                                ambigüedades y mejorando la comunicación entre analistas, 
+                                desarrolladores y personal médico.
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+            
+                <br>
+                    </div>
+                
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>2. Comercio electrónico (Proceso de pago en línea)</h3></li>
+                    <br>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020b'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                  
+                    <strong><br> ❖ &emsp;<i>Desarrollo ejemplo 2 </i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText020b">
+                    <p>
+                    <h4>
+                    <br>
+                        <strong>Contexto:</strong> Una tienda en línea desea mejorar el flujo de compra 
+                        de sus clientes, ya que muchos abandonan el carrito debido a errores 
+                        en la pasarela de pago o a una experiencia confusa.
+                        <br><br>
+                        <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej2.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 9: Comercio electrónico) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020b1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020b1">
+                            <p><br>
+                                El requerimiento original decía: “El sistema debe permitir 
+                                comprar productos en línea”. Esta formulación era demasiado 
+                                general y no especificaba pasos, validaciones o confirmaciones.
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020b2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020b2">
+                            <p><br>
+                                Berry (2004, p. 4) destaca que los requerimientos deben ser 
+                                específicos, claros y relacionados directamente con las necesidades 
+                                del usuario final.
+                                <br>
+                                Con base en ello, se redefine el requerimiento:
+                                “El sistema permitirá al usuario seleccionar productos, agregarlos al 
+                                carrito, elegir método de pago (tarjeta o PayPal) y completar la compra 
+                                con confirmación electrónica del pedido.”
+                                <br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020b3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020b3">
+                            <p><br>
+                                Esta versión establece un flujo de compra verificable, mejora la 
+                                comunicación entre las áreas de desarrollo y diseño, y permite probar 
+                                la experiencia del usuario mediante criterios medibles.
+                                <br><br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+                <br>
+                    </div>    
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>3. Aplicación universitaria (Consulta de calificaciones)</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020c'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                  
+                    <strong><br> ❖ &emsp;<i>Desarrollo ejemplo 3 </i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText020c">
+                    <p>
+                    <h4>
+                    <br>
+                    <strong>Contexto:</strong> Una universidad desea desarrollar una aplicación móvil 
+                    que permita a los estudiantes consultar sus calificaciones y horarios 
+                    de clases de forma segura y rápida.<br><br>
+                    <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej3.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 10: Aplicación universitaria) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020c1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020c1">
+                            <p><br>
+                                El requerimiento inicial era ambiguo: “La aplicación mostrará 
+                                información académica”. No se indicaba qué tipo de información, 
+                                con qué frecuencia se actualizaba, ni las medidas de seguridad 
+                                necesarias.<br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020c2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020c2">
+                            <p><br>
+                                Wong Durand (2017, pp. 21-22) indica que los requerimientos 
+                                deben clasificarse correctamente para facilitar su diseño e implementación. 
+                                Se propone la siguiente definición:<br>
+                                <br>
+                                <ul>
+                                    <li><strong>Requerimiento funcional:</strong> “La aplicación permitirá 
+                                        al estudiante consultar sus calificaciones y horarios por semestre.”</li>
+                                    <li><strong>Requerimiento no funcional:</strong> “La aplicación deberá 
+                                        cargar los datos en menos de 2 segundos y utilizar conexión segura 
+                                        mediante protocolo HTTPS.”</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020c3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020c3">
+                            <p><br>
+                                Esta distinción permite mayor precisión en la documentación 
+                                del sistema y garantiza que tanto programadores como usuarios finales 
+                                comprendan las expectativas funcionales y de rendimiento del software.<br><br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+                <br>     
+                    </div>    
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>4. Banca en línea (Autenticación de usuarios):</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020d'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                  
+                    <strong><br> ❖ &emsp;<i>Desarrollo ejemplo 4 </i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText020d">
+                    <p>
+                    <h4>
+                    <br>
+                    <strong>Contexto:</strong> Un banco desarrolla una plataforma 
+                    web para que los nuevos clientes inicien sesión y puedan entrar a la 
+                    página.
+                    <br><br>
+                    <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej4.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 11: Banca en línea) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020d1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020d1">
+                            <p><br>
+                                El requerimiento “El sistema debe permitir iniciar sesión” 
+                                no define seguridad ni validaciones.<br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020d2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020d2">
+                            <p><br>
+                                Pressman (2010) señala que los requerimientos deben describir 
+                                el comportamiento esperado bajo condiciones específicas.
+                                <br>
+                                Redefinición:
+                                “El sistema permitirá a los usuarios autenticarse con nombre de 
+                                usuario, contraseña y código OTP enviado por SMS.”
+<br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020d3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020d3">
+                            <p><br>
+                                Se mejora la seguridad y la trazabilidad del acceso, cumpliendo 
+                                con normas de autenticación reforzada.
+                                <br><br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+                <br>    
+                    </div>    
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>5. Gobierno digital (Gestión de trámites)</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020f'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                  
+                    <strong><br> ❖ &emsp;<i> Desarrollo ejemplo 5 </i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText020f">
+                    <p>
+                    <h4>
+                    <br>
+                    <strong>Contexto: </strong> Un municipio necesita implementar un portal 
+                    para que los ciudadanos puedan realizar trámites en línea.
+                    <br><br>
+                    <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej5.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 12: Gobierno digital) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020f1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020f1">
+                            <p><br>
+                                El requerimiento “El sistema debe permitir realizar trámites” es demasiado general.
+                                Por lo que no está bien definido lo que se necesita<br>
+
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020f2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020f2">
+                            <p><br>
+                                Sommerville (2011) explica que los requerimientos funcionales deben 
+                                detallar qué servicios ofrece el sistema al usuario.
+                                <br>
+                                Nuevo requerimiento:
+                                “El sistema permitirá a los ciudadanos solicitar actas de nacimiento, 
+                                pagar derechos y descargar comprobantes electrónicos desde su perfil 
+                                personal.”
+                                <br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020f3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020f3">
+                            <p><br>
+                                El requerimiento se vuelve comprensible para desarrolladores y 
+                                usuarios gubernamentales, de esta forma se puede desarrollar de 
+                                manera correcta el proyecto<br><br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+                <br>
+
+                    </div>    
+                    
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>6. Salud pública (Control de vacunación)</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020e'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                  
+                    <strong><br> ❖ &emsp;<i>Desarrollo ejemplo 6 </i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText020e">
+                    <p>
+                    <h4>
+                    <br>
+                    <strong>Contexto:</strong> Un sistema nacional de salud busca 
+                    llevar control digital de vacunación infantil.
+                    <br><br>
+                    <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej6.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 13: Salud pública) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020e1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020e1">
+                            <p><br>
+                                El requerimiento “El sistema debe registrar vacunas” no define 
+                                periodicidad ni validación.<br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020e2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020e2">
+                            <p><br>
+                                Pohl (2010) indica que los requerimientos deben ser completos y consistentes.
+                                <br>
+                                Reescritura:
+                                “El sistema debe permitir registrar dosis aplicadas, fecha, lote de 
+                                vacuna y nombre del médico, validando automáticamente los intervalos 
+                                entre dosis.”
+                                <br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020e3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020e3">
+                            <p><br>
+                                La definición clara reduce errores en registros y facilita 
+                                auditorías sanitarias.<br><br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+                <br>
+			        </div>
+                    
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>7. Transporte urbano (Gestión de rutas)</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020g'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                  
+                    <strong><br> ❖ &emsp;<i>Desarrollo ejemplo 7 </i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText020g">
+                    <p>
+                    <h4>
+                    <br>
+                    <strong>Contexto:</strong> Una empresa de transporte busca 
+                    optimizar rutas y horarios de autobuses mediante una aplicación. 
+                    <br><br>
+                    <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej7.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 14: Transporte urbano) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020g1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020g1">
+                            <p><br>
+                                El requerimiento “El sistema mostrará rutas” es incompleto y ambiguo.<br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020g2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020g2">
+                            <p><br>
+                                Robertson y Robertson (2012) destacan que los requerimientos 
+                                deben enfocarse en qué necesita el usuario, no en cómo se implementa.
+                                <br>
+                                Nuevo requerimiento:
+                                “El sistema mostrará rutas disponibles según origen y destino seleccionados, 
+                                indicando horarios y tiempo estimado de llegada.”
+                                <br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020g3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020g3">
+                            <p><br>
+                                Se mejora la utilidad del sistema y la experiencia del usuario.<br><br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+                <br>
+                    </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>8. Manufactura (Control de inventarios)</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020h'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                  
+                    <strong><br> ❖ &emsp;<i>Desarrollo ejemplo 8 </i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText020h">
+                    <p>
+                    <h4>
+                    <br>
+                    <strong>Contexto:</strong> Una fábrica manufacturera necesita un sistema 
+                    que controle inventarios y alertas de reposición.
+                    <br><br>
+                    <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej8.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 15: Manufactura) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020h1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020h1">
+                            <p><br>
+                                El requerimiento “El sistema manejará inventarios” no especifica 
+                                variables ni acciones automáticas.<br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020h2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020h2">
+                            <p><br>
+                                Hull et al. (2011) indican que los requerimientos deben describir 
+                                condiciones de entrada, procesamiento y salida.
+                                <br>
+                                Redefinición:
+                                “El sistema deberá registrar productos, cantidades y ubicación; 
+                                generará alertas automáticas cuando un ítem llegue al 10% del stock 
+                                mínimo.”
+                                <br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020h3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020h3">
+                            <p><br>
+                                El requerimiento permite desarrollar una función verificable y 
+                                alineada con objetivos productivos.
+                                <br><br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+                <br>
+                    </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>9. Redes sociales (Publicaciones y privacidad)</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020j'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                  
+                    <strong><br> ❖ &emsp;<i>Desarrollo ejemplo 9 </i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText020j">
+                    <p>
+                    <h4>
+                    <br>
+                    <strong>Contexto:</strong> Una startup diseña una red social 
+                    enfocada en compartir publicaciones con controles de privacidad.
+                    <br><br>
+                    <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej9.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 16: Redes sociales) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020j1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020j1">
+                            <p><br>
+                                El requerimiento “El sistema permitirá publicar contenido” 
+                                no define permisos ni visibilidad.<br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020j2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020j2">
+                            <p><br>
+                                Pressman y Maxim (2020) destacan la importancia de requerimientos 
+                                medibles y centrados en la interacción usuario-sistema.
+                                <br>
+                                Definición:
+                                “El sistema permitirá crear publicaciones con texto o imagen, 
+                                configurando su visibilidad como pública, privada o solo para amigos.”
+                                <br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020j3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020j3">
+                            <p><br>
+                                El requerimiento se convierte en funcional, verificable y 
+                                alineado con políticas de privacidad.<br><br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+                <br>
+                    </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>10. Energía (Medición inteligente)</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText020k'); return false;" style="
+                    display: block;
+                    font-weight: bold;
+                    color: #000000;
+                    background-color: #f6aa1c;
+                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                    border-radius: 10px;
+                    text-align: center;
+                    width: auto;
+                    height: 70px ">
+                  
+                    <strong><br> ❖ &emsp;<i>Desarrollo ejemplo 10 </i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText020k">
+                    <p>
+                    <h4>
+                    <br>
+                    <strong>Contexto:</strong> Una empresa eléctrica implementa medidores 
+                    inteligentes para monitorear el consumo en tiempo real.
+                    <br><br>
+                    <img src="https://www.siccaad.unam.mx/media/materials/t1447/media/img/ej10.jpg" border="0" width="650" alt="">
+			            <center><small>(Figura 17: Energía) 
+			            </small></center>
+                        <br>
+                        <a href="#" onclick="toggleVisibility('hiddenText020k1'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Problema
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020k1">
+                            <p><br>
+                                El requerimiento “El sistema medirá el consumo” no define 
+                                precisión, frecuencia ni formato.<br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020k2'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Aplicación del concepto
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020k2">
+                            <p><br>
+                                Según IEEE 830-1998, los requerimientos deben ser medibles, 
+                                verificables y rastreables.
+                                <br>
+                                Nuevo requerimiento:
+                                “El sistema deberá registrar el consumo energético de cada cliente cada 
+                                15 minutos, con precisión de ±2 %, y enviar los datos en formato XML al 
+                                servidor central.”
+                                <br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+            
+                        <a href="#" onclick="toggleVisibility('hiddenText020k3'); return false;" style="
+                            display: block;
+                            font-weight: bold;
+                            color: #000000;
+                            background-color: #f6aa1c;
+                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+                            border-radius: 10px;
+                            text-align: center;
+                            width: auto;
+                            height: 70px ">
+                  
+                            <strong><br> Resultado
+                        </a>
+                        <div style="display: none; margin-top: 10px;" id="hiddenText020k3">
+                            <p><br>
+                                La definición cumple estándares de calidad y facilita la validación técnica.<br><br>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleVisibility(id) {
+                                var element = document.getElementById(id);
+                                if (element.style.display === 'none') {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
+                        <br>
+                    </h4>
+                    </p>
+                </div>
+            
+                <script>
+                function toggleVisibility(id) {
+                    var element = document.getElementById(id);
+                    if (element.style.display === 'none') {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+                </script>
+                <br>
+                    </div>
+                    <br><br><br><br>
+		</section>
+	</section>
+
+<!-- Mirrored from www.siccaad.unam.mx/media/materials/t1186/ejemplos.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Nov 2025 21:26:40 GMT -->
+
+<!-- Mirrored from www.siccaad.unam.mx/media/materials/t1447/ejemplos.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2026 18:57:36 GMT -->
+</html>
