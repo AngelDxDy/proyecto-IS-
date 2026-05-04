@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="es" style="">
+
+
+<!-- Mirrored from www.siccaad.unam.mx/media/materials/t1186/desarrollo.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Nov 2025 21:26:37 GMT -->
+
+<!-- Mirrored from www.siccaad.unam.mx/media/materials/t1447/desarrollo.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2026 18:57:34 GMT -->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 2"><!--Autor-->
+	<script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="stylesheet" href="media/css/portada.css" type="text/css">
+
+</head>
+
+<body style="">
+	<br><br><br>
+	<h1><t>3. DESARROLLO</t></h1> <br>
+	<h3>3.1 Definición de requerimiento de software</h3>
+	<h5>
+		Un requerimiento de software puede entenderse como una condición o capacidad 
+		que el sistema debe poseer para cumplir con un contrato, norma o necesidad 
+		específica. Pressman y Maxim (2020, p. 134) indican que los requerimientos 
+		funcionan como un contrato entre el cliente y el desarrollador, estableciendo 
+		el alcance y los límites del proyecto.
+		<br><br>
+		Así mismo, Pressman (2002, p.171), presenta la ingeniería de requisitos como 
+		respaldo a uno de los desafíos que se presentan al momento de generar y crear 
+		un software: “¿Cómo podemos asegurar que hemos especificado un sistema que recoge 
+		las necesidades del cliente y satisface sus expectativas?”, realmente para este 
+		desafío no existe una respuesta segura, sin embargo, mediante un buen proceso de 
+		ingeniería de requisitos se puede lograr la mejor solución posible. 
+		<br><br>
+		Pressman definió que la función de esta ingeniería de requisitos, es la de validar 
+		y gestionar dichos requerimientos, para así lograr transformar dichos requisitos 
+		en un sistema operacional. Esto gracias a que entendiendo el proceso de ingeniería 
+		de requisitos, podemos facilitar el mecanismo apropiado para comprender lo que el 
+		cliente quiere, analizando sus necesidades, confirmando su viabilidad, negociando 
+		una solución razonable y especificando la solución sin ambigüedad. (2002, pp.171-172).
+		<br><br>
+		De acuerdo con Sommerville (2011, p. 103), estos requerimientos comprenden tanto las 
+		funciones que debe desempeñar el sistema como las restricciones que delimitan su 
+		comportamiento. La definición precisa de los requerimientos constituye un proceso 
+		comunicativo y técnico que requiere claridad, coherencia y verificabilidad.
+		<br><br>
+		<div class="mover-derecha">"La formulación de requerimientos debe ser un proceso de 
+			descubrimiento y negociación más que una mera descripción de necesidades" 
+			(Sommerville, 2011, p. 104).
+		</div>
+		<br><br>
+		Esta afirmación pone de manifiesto la importancia del diálogo constante entre los 
+		usuarios, analistas y desarrolladores para garantizar que el producto final satisfaga 
+		las necesidades reales.
+	</h5>
+	<br><br>
+		<img src="media/img/3.1img.jpg" border="0" width="650" alt="">
+			<center><small>(Figura 1: Presentación empresarial) 
+			</small></center>
+	
+	<br><br>
+	<h3>3.2 Origen de los requerimientos de software</h3>
+	<h5>
+		Respecto al origen de los requerimientos de software, según Wong Durand, estos 
+		requerimientos surgen debido a una necesidad de automatización en el desarrollo 
+		del software, en la mayoría de los casos se describe una regla funcional a alto 
+		nivel y se describe una idea de manera global.
+		<br><br>
+		Así mismo, Wong nos presenta al International Institute of Business Analysis [IIBA] 
+		(2009), el cual define el término requerimiento o requisito de la siguiente forma:
+		<br><br>
+		<div class="mover-derecha">
+			The term “requirement” is one that generates a lot of discussion within the 
+			business analysis community. Many of these debates focus on what should or should 
+			not be considered a requirement, and what are the necessary characteristics of a 
+			requirement. When reading the BABOK® Guide, however, it is vital that “requirement” 
+			be understood in the broadest possible sense. Requirements include, but are not 
+			limited to, past, present, and future conditions or capabilities in an enterprise 
+			and descriptions of organizational structures, roles, processes, policies, rules, 
+			and information systems. A requirement may describe the current or the future 
+			state of any aspect of the enterprise. (p. 005).
+		</div>
+		(Wong, 2017, p.51)
+		<br><br>
+		Este texto explica que el término <strong>“requirement” (requerimiento)</strong> 
+		genera mucha discusión entre los analistas de negocios, porque no siempre hay acuerdo 
+		sobre qué cosas deben considerarse un requerimiento o qué características debe tener 
+		dicho requerimiento.
+		<br><br>
+		El BABOK® Guide (una guía internacional sobre análisis de negocios) aclara que debe 
+		entenderse el concepto de la forma más amplia posible. Es decir, un requerimiento no 
+		se limita solo al software, sino que puede incluir condiciones o capacidades pasadas, 
+		presentes o futuras de una empresa, así como descripciones de su estructura 
+		organizacional, funciones, procesos, políticas, reglas e incluso sus sistemas de 
+		información.
+		<br><br>
+		Resumiendo lo dicho por este Instituto, el texto nos narra que un requerimiento <strong>
+		puede describir cualquier aspecto del estado actual o futuro de la organización</strong>
+		, no solo se basa en lo que hace el sistema, sino todo lo que la empresa necesita o 
+		debe tener para funcionar correctamente a lo largo del tiempo.
+	</h5>
+	<br><br>
+	<img src="media/img/3.2img.jpg" border="0" width="650" alt="">
+			<center><small>(Figura 2: Creación de requerimiento) 
+			</small></center>
+	<br><br>
+	<h3>3.3 Ingeniería de requerimientos<br></h3>
+	<h5>
+		La ingeniería de requerimientos ayuda a plasmar los requisitos funcionales de los 
+		usuarios en diagramas técnicos que permitan a los analistas y programadores de 
+		software un mejor entendimiento del producto de software que tienen que desarrollar. 
+		En esta primera etapa, los diagramas de contexto y diagramas de flujo de datos son 
+		los primeros por elaborar para poder lograr un entendimiento con el usuario de lo que 
+		se requiere.
+		<br>
+		La ingeniería de requerimientos constituye la fase inicial del desarrollo de software, 
+		pues ayuda a generar las especificaciones preliminares para tal desarrollo. 
+		<br><br>
+		En esta primera etapa pueden elaborarse incluso pruebas de concepto preliminares para 
+		evaluar la tecnología por aplicar y la factibilidad de continuar con el desarrollo del 
+		software. Igualmente, se aplican técnicas de experiencia de usuario para que el usuario 
+		en esta primera etapa conozca a alto nivel cómo quedarán sus interfaces. El riesgo en 
+		esta etapa es la indecisión del usuario, pues si aún no sabe concretamente lo que 
+		quiere o tiene mucha dificultad para tomar decisiones, esta etapa puede tomar mucho 
+		tiempo.
+		<br><br>
+		Pressman (2005) precisa que: 
+		<div class="mover-derecha">
+			La ingeniería de requisitos se lleva a cabo a través de siete funciones que en 
+			algunos casos pueden ejecutarse de manera paralela, sin embargo las mismas se 
+			adaptarán a la metodología a utilizar por la organización y a la necesidad del 
+			proyecto, la finalidad es definir claramente la necesidad del usuario final de 
+			modo que pueda desarrollarse adecuadamente un análisis, diseño y construcción que 
+			refleje lo que el usuario solicitó (p. 157).
+		</div>
+	</h5>
+	<br>
+	<img src="media/img/3.3img.jpg" border="0" width="650" alt="">
+			<center><small>(Figura 3: Conexión entre usuario y desarrollador) 
+			</small></center>
+	<br><br>
+	<h3>3.4 Características de un buen requerimiento <br></h3>
+	<h5>
+		Un requerimiento correctamente definido debe poseer ciertas características que aseguren 
+		su calidad y utilidad. Entre ellas destacan la claridad, consistencia, completitud, 
+		verificabilidad y trazabilidad. Robertson y Robertson (2012) afirman que “un 
+		requerimiento de calidad es aquel que puede ser comprendido del mismo modo por todos 
+		los interesados y validado mediante evidencia objetiva” (p. 65).
+		<br><br>
+		De igual forma, Sommerville (2011) enfatiza que “la coherencia entre los requerimientos 
+		es esencial para evitar contradicciones que generen fallos en el diseño o en la 
+		implementación del sistema” (p. 83).
+		<br>
+		Estas propiedades garantizan que el documento de requerimientos sea confiable, 
+		facilite la comunicación y minimice los errores durante las fases posteriores.
+		<br><br>
+		Por ejemplo, la claridad implica evitar términos ambiguos o subjetivos como “rápido” o 
+		“fácil de usar”. En cambio, deben expresarse criterios cuantificables, como “el sistema 
+		debe procesar 100 solicitudes por minuto con un tiempo de respuesta menor a dos 
+		segundos”. Este nivel de detalle permite verificar objetivamente el cumplimiento del 
+		requerimiento.
+	</h5>
+	<br><br>
+	<img src="media/img/3.4img.jpg" border="0" width="650" alt="">
+			<center><small>(Figura 4: Proceso creativo de requerimientos) 
+			</small></center>
+	
+	<h3><br><br>3.5 Propósito de los requerimientos</h3>
+	<h5>
+		El propósito fundamental de un requerimiento es establecer las condiciones bajo las 
+		cuales el sistema será considerado exitoso. Esto implica definir con claridad qué debe
+		hacer el sistema, cómo debe comportarse y bajo qué limitaciones debe operar. 
+		Sommerville (2011) explica que “los requerimientos sirven como base de comunicación 
+		entre el cliente, los usuarios y los desarrolladores, reduciendo la ambigüedad y los 
+		malentendidos” (p. 103).
+		<br><br>
+		Desde esta perspectiva, los requerimientos actúan como un contrato comunicativo. 
+		Pressman y Maxim (2020) añaden que “cada requerimiento debe establecer criterios 
+		verificables que permitan comprobar su cumplimiento durante las pruebas y la validación 
+		del sistema” (p. 136). Esta función de control asegura que el producto final pueda 
+		evaluarse objetivamente, garantizando la satisfacción de las expectativas iniciales.
+		<br><br>
+		El propósito de los requerimientos, por tanto, no se limita a definir funcionalidades, 
+		sino que guía todo el proceso de desarrollo, establece límites, permite la 
+		planificación y ofrece una referencia constante para la toma de decisiones técnicas.
+		<br><br>
+
+	</h5>
+	<br>
+	<img src="media/img/3.5img.jpg" border="0" width="650" alt="">
+			<center><small>(Figura 5: Análisis del impacto de requerimientos) 
+			</small></center>
+	<br><br>
+	<h3>3.6 Importancia de la especificación de los requerimientos</h3>
+	<h5>
+		La correcta definición de los requerimientos determina en gran medida el éxito o 
+		fracaso de un proyecto. Cuando no se definen adecuadamente, los proyectos suelen 
+		presentar sobrecostos, demoras o incluso cancelaciones. Cristiá (2018) cita un estudio 
+		del Standish Group realizado en 1994 sobre 8,000 proyectos de software, donde se halló 
+		que solo el 9% de los proyectos grandes fueron entregados dentro del tiempo y 
+		presupuesto previstos. Las causas principales del fracaso incluyeron requerimientos 
+		incompletos, expectativas no realistas y falta de compromiso del usuario.
+		<br><br>
+		<div class="mover-derecha">
+			En 1994 el Standish Group realizó un estudio sobre 8,000 proyectos de software con el 
+			objetivo de determinar el grado de éxito de cada uno de ellos. Los resultados fueron 
+			bastante desalentadores: el 31% de los proyectos fueron cancelados antes de ser 
+			terminados, en las grandes compañías solo el 9% de los proyectos fueron entregados 
+			dentro del plazo y presupuesto predefinidos y el 16% en las pequeñas y medianas. 
+			A raíz de estos descubrimientos, un año más tarde Standish Group realizó otro estudio 
+			para determinar las causas de semejante fracaso. Los resultados fueron los siguientes:
+		</div> 
+		<br>
+		<ul class="mover-derecha">
+			<li>Requerimientos incompletos (13,1%)</li>
+			<li>Falta de compromiso del usuario (12,4%) </li>
+			<li>Falta de recursos (10,6%) </li>
+			<li>Expectativas no realistas (9,9%) </li>
+			<li>Falta de soporte ejecutivo (9,3%)</li>
+			<li>Requerimientos y especificaciones cambiantes (8,7%) </li>	
+			<li>Falta de planeamiento (8,1%)</li>	
+			<li>Fin de la necesidad del sistema (7,5%)</li>
+				
+		</ul>
+		(Cristiá, 2018).
+		<br><br>
+		Este ejemplo demuestra que la ingeniería de requerimientos participa de manera directa 
+		en el éxito de los proyectos tecnológicos, ya que permite documentar, analizar y 
+		gestionar las expectativas desde las fases iniciales del desarrollo.
+	
+		<br><br>
+		<img src="media/img/3.6img.jpg" border="0" width="650" alt="">
+			<center><small>(Figura 6: Objetivo y alcance de los requerimientos) 
+			</small></center>
+		<br><br>
+		<h3> 3.7 Ciclo de vida de los requerimientos</h3><br>
+		<h5>
+			El ciclo de vida de los requerimientos abarca el conjunto de fases por las cuales 
+			atraviesan las necesidades del usuario desde su identificación inicial hasta su 
+			mantenimiento durante la operación del sistema. Este proceso es dinámico y 
+			reiterativo, pues los requerimientos pueden cambiar conforme se modifican las 
+			condiciones del entorno o las expectativas del cliente.
+			<!--<img src="media/img/dev.png" alt="">
+			<center><small>(Figura 9: Portada desarrollo de productos, Fuente: https://www.questionpro.com/blog/es/desarrollo-de-productos/)</small></center>-->
+			<br><br>
+			Como afirma Sommerville,<br>
+			<div class="mover-derecha">
+				“La ingeniería de requerimientos implica un conjunto de actividades que incluyen la 
+				obtención, el análisis, la especificación, la validación y la gestión de los 
+				requerimientos, todas ellas interdependientes entre sí”
+				(2011, p. 120).
+			</div>
+			<br>
+			Estas etapas buscan asegurar que el producto final sea coherente con las necesidades 
+			reales del usuario, manteniendo un equilibrio entre lo técnico y lo funcional.
+			<br><br>
+			<div class="mover-derecha-pequeño">
+				<h4>3.7.1 Elicitación de los requerimientos </h4><br>
+				La elicitación representa el punto de partida del ciclo de vida. En esta etapa se 
+				busca descubrir las necesidades reales de los usuarios y demás interesados 
+				mediante la observación, el diálogo y la exploración del contexto organizacional. 
+				Sommerville (2011) explica que la elicitación “consiste en recopilar información 
+				sobre lo que el sistema debe hacer a través de la comunicación directa con los 
+				interesados”.
+				<br><br>
+				<h4>3.7.2 Análisis y negociación</h4><br>
+				Una vez obtenidos los requerimientos iniciales, se procede al análisis y 
+				negociación. Esta fase tiene como propósito depurar, clasificar y priorizar los 
+				requerimientos, eliminando ambigüedades y resolviendo conflictos entre las 
+				distintas partes interesadas.
+				<br><br>
+				Por ejemplo, el área de ventas puede requerir funcionalidades avanzadas que 
+				incrementen las ventas, mientras que el equipo de desarrollo debe equilibrar 
+				dichas demandas con los recursos y plazos disponibles. Este diálogo constante 
+				permite transformar los requerimientos iniciales en un conjunto estructurado, 
+				realista y validado. En consecuencia, el análisis y la negociación constituyen el 
+				filtro de calidad conceptual antes de pasar a la documentación formal.
+				<br><br>
+				<h4>3.7.3 Especificación de requerimientos</h4><br>
+				La etapa de especificación tiene como finalidad convertir los acuerdos alcanzados 
+				en un documento formal y verificable. Este documento, conocido como Especificación 
+				de Requerimientos de Software (SRS), sirve como un contrato técnico entre los 
+				clientes y el equipo de desarrollo. Pressman (2010) explica que “una buena 
+				especificación debe describir las funciones, restricciones y propiedades del 
+				sistema con claridad, precisión y sin ambigüedades” 
+				<br><br>
+				El contenido de una SRS incluye la descripción del propósito del sistema, sus 
+				funciones principales, requerimientos de desempeño, interfaces, restricciones, 
+				criterios de validación y trazabilidad. Robertson y Robertson (2012) complementan 
+				que
+				“una especificación efectiva no se limita a enumerar requerimientos, sino que 
+				presenta la información de forma comprensible, organizada y verificable”
+				<br><br>
+				<h4>3.7.4 Validación de requerimientos </h4><br> 
+				La validación consiste en comprobar que los requerimientos definidos reflejen de 
+				manera fiel las necesidades reales del usuario y cumplan con los criterios de 
+				calidad establecidos. Según Sommerville (2011), “la validación garantiza que los 
+				requerimientos sean correctos, consistentes y completos antes de iniciar la etapa 
+				de diseño”
+				En esta fase se utilizan técnicas como las revisiones por pares, inspecciones 
+				formales, demostraciones de prototipos y pruebas de aceptación tempranas. 
+				Por ejemplo, si durante la validación se descubre que una funcionalidad no cumple 
+				con las normas de seguridad de la organización, puede corregirse antes de invertir 
+				tiempo en su desarrollo. Este proceso no solo evalúa la coherencia técnica del 
+				documento, sino también su alineación con los objetivos estratégicos de la empresa.
+				<br><br>
+				<h4>3.7.5 Gestión de requerimientos </h4><br>
+				La gestión de requerimientos es la fase que mantiene la estabilidad del proyecto a 
+				lo largo del tiempo. Su objetivo es controlar los cambios, conservar la 
+				trazabilidad y asegurar la coherencia del sistema incluso después de su 
+				implementación.
+				Pohl (2010) señala que “la gestión de requerimientos permite manejar el cambio de 
+				manera estructurada, manteniendo la relación entre las necesidades originales y su 
+				implementación final”
+				<br>
+				Los requerimientos evolucionan conforme cambian las condiciones del negocio o las 
+				tecnologías disponibles. Sommerville (2011) advierte que “la gestión no termina 
+				con la entrega del documento, sino que debe acompañar todo el ciclo de vida del 
+				software”.
+				<br><br>
+				En conjunto, las fases del ciclo de vida de los requerimientos conforman un 
+				proceso estructurado que equilibra el análisis técnico con la comprensión humana 
+				de las necesidades del usuario. Como concluye Sommerville (2011), “una gestión 
+				adecuada del ciclo de vida no solo mejora la eficiencia del desarrollo, sino que 
+				incrementa la satisfacción del cliente y prolonga la vida útil del sistema”.
+			</div>
+			<br>
+			
+		</h5>
+	</h5>
+	<br>
+	<img src="media/img/3.7img.jpg" border="0" width="650" alt="">
+			<center><small>(Figura 7: Ciclo de vida de los requerimientos) 
+			</small></center>
+	<br><br>
+	<h3> 3.8 Proceso de definición</h3> <br>
+	<h5>
+		El proceso de definición de requerimientos comprende una serie de actividades 
+		interdependientes que permiten transformar las necesidades del usuario en 
+		especificaciones formales. Entre estas actividades destacan la identificación de 
+		necesidades, el análisis de viabilidad, la documentación formal y la validación inicial, 
+		las cuales se desarrollan de manera iterativa a lo largo del ciclo de vida del proyecto.
+		<br><br>
+		Sommerville (2011) describe este proceso como:
+		<br>
+		<div class="mover-derecha">
+			“un ciclo iterativo de descubrimiento, documentación y validación, en el cual cada 
+			requerimiento se refina progresivamente hasta alcanzar la precisión deseada”
+			(p. 120).
+		</div>
+		<br><br>
+		Esta definición pone de relieve que la formulación de requerimientos no es una tarea 
+		lineal ni estática, sino un ejercicio continuo de comprensión y ajuste. En cada 
+		iteración, los analistas profundizan en el entendimiento de las necesidades del 
+		usuario y en las restricciones del entorno, lo que permite incrementar la calidad del 
+		producto final.
+		<br><br>
+		Durante esta fase, los analistas aplican diversas técnicas orientadas a capturar y 
+		formalizar la información de manera sistemática. Se utilizan métodos como entrevistas, 
+		observación directa de procesos, análisis de tareas, modelado con UML (Unified Modeling 
+		Language) y la creación de prototipos funcionales. Según Hull, Jackson y Dick (2011), 
+		“comprender el entorno, las metas y las motivaciones de los usuarios resulta tan 
+		importante como registrar las funciones que el sistema debe realizar” (p. 52). Esta 
+		afirmación destaca que la definición de requerimientos no puede reducirse a aspectos 
+		técnicos, pues depende también del conocimiento del contexto social y organizacional 
+		en el que el software operará.
+		<br><br>
+		El resultado tangible de esta etapa es el Documento de Especificación de Requerimientos 
+		de Software (SRS), un informe formal que define con precisión las funciones, 
+		restricciones y propiedades del sistema. Dicho documento sirve como guía para el 
+		diseño, la programación y las pruebas, garantizando la trazabilidad de cada 
+		requerimiento desde su origen hasta su implementación final. Robertson y Robertson 
+		(2012) señalan que “la especificación de requerimientos debe ser lo suficientemente 
+		estructurada para permitir su validación técnica y lo bastante clara para facilitar 
+		su comprensión por parte de los usuarios” (p. 93).
+		<br><br>
+		En definitiva, el proceso de definición constituye el núcleo de la ingeniería de 
+		requerimientos. Su éxito depende de la capacidad del analista para equilibrar la 
+		comprensión humana con la precisión técnica, construyendo un puente sólido entre las 
+		necesidades del cliente y la solución tecnológica que el sistema proporcionará.
+		<br><br>
+		
+	</h5>
+	<br><br>
+	<h3> 3.9 Errores comunes en la definición de requerimientos</h3><br>
+	<h5>
+		La definición de requerimientos es una de las actividades más críticas del desarrollo 
+		de software, pero también una de las más propensas a errores. Estos fallos pueden 
+		originarse por la falta de comunicación entre los participantes, la ambigüedad en la 
+		redacción o la ausencia de métodos estructurados para la recopilación y análisis de la 
+		información. Sommerville (2011) advierte que “la ambigüedad del lenguaje natural, la 
+		escasa participación de los usuarios y los cambios no controlados en las necesidades 
+		constituyen las principales fuentes de error en la definición de requerimientos” (p. 130).
+		<br><br>
+		En efecto, el uso del lenguaje cotidiano suele conducir a interpretaciones diversas. 
+		Un requerimiento formulado de manera vaga como “el sistema debe ser rápido y confiable” 
+		puede parecer comprensible, pero resulta imposible de verificar objetivamente. Pressman y 
+		Maxim (2020) señalan que “las descripciones imprecisas o subjetivas provocan inconsistencias 
+		y fallas de comunicación que afectan el diseño y la implementación del sistema” (p. 142). 
+		Este tipo de ambigüedad no solo retrasa el desarrollo, sino que incrementa los costos al 
+		requerir correcciones en etapas avanzadas del proyecto.
+		<br><br>
+		Otro error frecuente consiste en asumir que los usuarios comprenden plenamente sus propias 
+		necesidades. Sommerville (2011) sostiene que, en muchos casos, “los usuarios no pueden 
+		articular de forma completa lo que esperan del sistema hasta que observan una versión 
+		funcional o un prototipo” (p. 124). Por esta razón, la interacción temprana con el cliente 
+		y el empleo de técnicas de prototipado se vuelven esenciales para refinar y validar los 
+		requerimientos antes de formalizarlos.
+		<br><br>
+		De igual modo, la omisión de requerimientos no funcionales representa una causa frecuente 
+		de problemas. Estos requerimientos relacionados con el rendimiento, la seguridad, la 
+		disponibilidad o la usabilidad suelen ser subestimados, aunque son determinantes para la 
+		calidad global del software. Hull, Jackson y Dick (2011) subrayan que “la ausencia de 
+		especificaciones claras sobre las propiedades de calidad del sistema puede conducir a 
+		soluciones técnicamente correctas pero inaceptables para el usuario” (p. 59).
+		<br>
+		“Los errores en los requerimientos son los más costosos de corregir, ya que su impacto se 
+		multiplica en las fases posteriores del desarrollo.”
+		(Pressman, 2010, p. 140)
+		
+		<br><br>
+		Esta observación sintetiza una realidad ampliamente documentada: los defectos en los 
+		requerimientos se propagan a lo largo del ciclo de vida del software, afectando tanto 
+		la planificación como las pruebas y el mantenimiento. Según Cristiá (2018), más del 40% 
+		de los fallos en proyectos de software tienen su origen en una definición deficiente de 
+		los requerimientos, lo que demuestra la importancia de abordar esta fase con rigor 
+		metodológico y comunicación constante entre las partes.
+		<br><br>
+		Asimismo, la falta de gestión de cambios es otro de los errores más comunes. Los proyectos 
+		de software están expuestos a modificaciones inevitables debido a la evolución de las 
+		necesidades del negocio o a nuevas restricciones técnicas. Pohl (2010) explica que “la 
+		incapacidad para manejar el cambio de forma estructurada conduce a la pérdida de trazabilidad 
+		y a inconsistencias en la implementación” (p. 152). Para evitarlo, es necesario establecer 
+		un proceso formal de control de versiones y revisión periódica de los requerimientos.
+		<br><br>
+		Como resumen Robertson y Robertson (2012), “los fallos más graves no provienen de la 
+		complejidad técnica, sino de los malentendidos humanos sobre lo que realmente se necesita” 
+		(p. 70). En este sentido, la claridad, la comunicación y la colaboración interdisciplinaria 
+		son elementos esenciales para prevenir ambigüedades y asegurar que el sistema desarrollado 
+		cumpla con su propósito.
+	</h5>
+	<br><br>
+	<h3> 3.10 Dificultades esenciales y accidentales</h3><br>
+	<h5>
+		“La parte más difícil de construir un sistema de software es decidir con precisión qué construir. 
+		Ninguna otra parte del trabajo conceptual es tan difícil como establecer los requerimientos 
+		técnicos detallados... Ninguna otra parte del trabajo puede dañar tanto el sistema resultante si 
+		se hace mal. Ninguna otra parte es tan difícil de corregir después.” [Brooks, 87]
+		<br><br>
+		Incluso nuestros objetivos más detallados parecen razonablemente sencillos; ¿por qué, entonces, 
+		tantos esfuerzos de desarrollo no logran alcanzarlos?
+		La respuesta corta es que la satisfacción mutua de estos objetivos, en la práctica, es inherentemente 
+		difícil. Para entender por qué, es útil reflexionar sobre algunos puntos planteados por el Dr. 
+		Brooks [Brooks, 87] acerca de por qué la ingeniería de software es difícil y sobre la distinción que 
+		él hace entre las dificultades esenciales —aquellas inherentes al problema— y las dificultades 
+		accidentales —aquellas introducidas por una práctica imperfecta—.
+		<br>
+		Aunque los requerimientos son inherentemente difíciles, no hay duda de que estas dificultades se 
+		multiplican muchas veces debido a las deficiencias de las prácticas actuales.
+		<br><br>
+		
+		<div class="mover-derecha">
+			<h4>3.10.1 Dificultades esenciales</h4><br>
+			Las siguientes dificultades esenciales acompañan a cada uno de los objetivos de los requerimientos:
+			<br>
+			<ul class="toggle-grid">
+			<li class="card">
+				<button class="card-btn" aria-expanded="false"><strong>Comprensión</strong></button>
+				<div class="card-content">Las personas no saben lo que quieren. Esto no significa que las personas 
+					no tengan una idea general de para qué es el software. Más bien, no comienzan con una 
+					comprensión precisa y detallada de qué funciones deben estar en el software, cuál debe ser la 
+					salida para cada posible entrada, cuánto tiempo debe tomar cada operación, cómo una decisión 
+					afectará a otra, y así sucesivamente.</div>
+			</li>
+			<li class="card">
+				<button class="card-btn" aria-expanded="false"><strong>Comunicación</strong></button>
+				<div class="card-content">Los requerimientos de software son difíciles de comunicar eficazmente. 
+					Como señala el Dr. Brooks, las estructuras conceptuales de los sistemas de software son 
+					complejas, arbitrarias y difíciles de visualizar. La dificultad inherente de la comunicación 
+					se ve agravada por la diversidad de propósitos y audiencias de una especificación de 
+					requerimientos. Tal grado de comunalidad típicamente no se da entre los muchos grupos diversos 
+					(por ejemplo, clientes, ingenieros de sistemas, gerentes) que deben usar una especificación 
+					de requerimientos de software.</div>
+			</li>
+			<li class="card">
+				<button class="card-btn" aria-expanded="false"><Strong>Control</Strong></button>
+				<div class="card-content">También existen dificultades inherentes al control del desarrollo del 
+					software. La naturaleza arbitraria e invisible del software hace difícil anticipar qué 
+					requerimientos se cumplirán fácilmente y cuáles podrían diezmar el presupuesto y el cronograma 
+					del proyecto, si es que pueden cumplirse en absoluto. La baja fidelidad de la planificación 
+					del software se ha convertido en un cliché; sin embargo, los requerimientos son la única base 
+					disponible para planificar o hacer un seguimiento de un plan. Esta situación se ve inmensamente 
+					agravada por la maleabilidad inherente del software. Para muchos desarrolladores industriales, 
+					la gestión del cambio es el problema más crítico en los requerimientos.</div>
+			</li>
+			<li class="card">
+				<button class="card-btn" aria-expanded="false"><strong>Preocupaciones inseparables</strong></button>
+				<div class="card-content">Al buscar soluciones a los problemas anteriores, nos enfrentamos a una 
+					dificultad adicional: los temas no pueden separarse fácilmente ni abordarse por partes. Por 
+					ejemplo, los desarrolladores han intentado resolver el problema de los requerimientos cambiantes 
+					congelando los requerimientos antes de que comience el diseño. Esto resulta impráctico debido al 
+					problema de comprensión: el cliente no sabrá completamente lo que quiere hasta que lo vea.</div>
+			</li>
+			</ul>
+
+			<script>
+			// Toggle behavior for the cards (uses event delegation so it works
+			// for any `.toggle-grid .card-btn` regardless of script placement)
+			(function(){
+				document.addEventListener('click', function(e){
+					var btn = e.target.closest('.toggle-grid .card-btn');
+					if(!btn) return;
+					e.preventDefault();
+					var li = btn.closest('.card');
+					if(!li) return;
+					var isOpen = li.classList.toggle('open');
+					btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+				});
+			})();
+			</script>
+			<br><br>
+
+			<h4>3.10.2 Dificultades accidentales</h4><br>
+			Se usa el término “accidental” en contraste con “esencial”, no para implicar que las dificultades surjan por 
+			casualidad, sino porque son el producto de fallas comunes en la gestión, la elicitación, la especificación o 
+			el uso de los requerimientos.		<br><br>
+			<br><br>
+			<ul class="toggle-grid">
+				<li class="card">
+					<button class="card-btn" aria-expanded="false"><strong>Escritos como una idea tardía</strong></button>
+					<div class="card-content">Sigue siendo una práctica común que la documentación de requerimientos se desarrolle solo después de que 
+					el software ya ha sido escrito. En muchos proyectos, la tentación de apresurarse hacia la implementación 
+					antes de comprender adecuadamente los requerimientos resulta irresistible.
+					<br><br>
+					Esta documentación posterior a los hechos inevitablemente viola el objetivo básico de definir lo que el 
+					sistema debe hacer en lugar de cómo debe hacerlo, ya que es simplemente una especificación del código tal 
+					como se escribió. Se produce después de los hechos, por lo que no se planifica ni se gestiona como una parte 
+					esencial del desarrollo, sino que se arma apresuradamente.
+					</div>
+				</li>
+				<li class="card">
+					<button class="card-btn" aria-expanded="false"><strong>Confusión en el propósito</strong></button>
+					<div class="card-content">Debido a que existen tantos públicos potenciales para una especificación de requerimientos, con diferentes 
+					puntos de vista, el propósito exacto del documento se vuelve confuso.
+					<br><br>
+					<ul>
+						<li>Se utiliza para vender el producto al cliente, por lo que incluye promociones de marketing exaltando 
+							las virtudes del producto.</li>
+						<li>Es la única documentación de lo que hace el sistema, por lo que incluye material introductorio, 
+							explicativo y de descripción general.</li>
+						<li>Es un documento contractual, por lo que se redacta de manera intencionadamente imprecisa para 
+							permitir al desarrollador cierta libertad en el producto entregado, o al cliente cierta flexibilidad 
+							para hacer cambios sin costo.</li>
+						<li>Es el vehículo de comunicación de las decisiones sobre los detalles del software a los diseñadores y 
+							programadores, por lo que incorpora elementos de diseño e implementación.</li>
+					</ul>
+					<br><br>
+					El resultado es un documento en el que no está claro cuáles afirmaciones representan verdaderos 
+					requerimientos y cuáles deberían asignarse más propiamente al marketing, diseño u otra documentación.
+					</div>
+				</li>
+				<li class="card">
+					<button class="card-btn" aria-expanded="false"><strong>No diseñado para ser útil</strong></button>
+					<div class="card-content">A menudo, en la prisa por llegar a la implementación, se dedica muy poco esfuerzo a los requerimientos. 
+					La especificación de requerimientos no se espera que sea útil, y de hecho, esto se convierte en una 
+					profecía autocumplida.
+					<br><br>
+					Como el documento no se considera útil, se dedica poco esfuerzo a diseñarlo, escribirlo, revisarlo o gestionar 
+					su creación y evolución. El resultado más evidente es una pobre organización.
+					</div>
+				</li>
+				<li class="card">
+					<button class="card-btn" aria-expanded="false"><strong>Carece de propiedades importantes</strong></button>
+					<div class="card-content">La falta de previsión, la confusión de propósito, o la falta de diseño y ejecución cuidadosos conducen a 
+					requerimientos que carecen de propiedades críticas para una buena especificación técnica.
+					<br><br>
+					Los requerimientos, si se documentan en absoluto, resultan ser redundantes, inconsistentes, incompletos, 
+					imprecisos e inexactos.
+					</div>
+				</li>
+			</ul>
+			<br><br>
+		</div>
+
+
+	</h5>
+	<h3>3.11 Buenas prácticas para una definición exitosa de requerimientos de software</h3><br>
+	<h5>
+
+		<a href="#" onclick="toggleVisibility('hiddenText020-a'); return false;" style="
+    		display: block;
+			font-weight: bold;
+  			color: #000000;
+  			background-color: #f6aa1c;
+  			border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
+ 			border-radius: 10px;
+  			text-align: center;
+  		
+ 			width: auto;
+			height: 70px ">
+  			
+			<strong><br> 1.  &emsp;<i>Escuchar más que hablar durante la fase de entrevistas.</i></strong>
+		</a>
+		<div style="display: none; margin-top: 10px;" id="hiddenText020-a">
+			<p><br>
+				Según Cristiá (2016, p. 8), una de las claves más importantes para una buena definición de 
+				requerimientos es <strong>escuchar más que hablar</strong> durante las entrevistas iniciales con los usuarios. 
+				El autor enfatiza que el ingeniero de requerimientos debe actuar como un intérprete entre el 
+				lenguaje cotidiano del cliente y el lenguaje técnico del software. Escuchar activamente permite 
+				identificar las verdaderas necesidades del usuario, más allá de sus primeras expresiones o deseos. 
+				Asimismo, Berezin (1999, p. 2) resalta que el entrevistador debe promover un diálogo abierto y 
+				hacer preguntas aclaratorias, evitando imponer soluciones antes de comprender el problema. 
+				En otras palabras, la comunicación efectiva comienza con la escucha empática y la validación 
+				constante de lo que el cliente expresa.
+				<br><br>
+
+			</p>
+		</div>
+		
+		<script>
+		function toggleVisibility(id) {
+			var element = document.getElementById(id);
+			if (element.style.display === 'none') {
+				element.style.display = 'block';
+			} else {
+				element.style.display = 'none';
+			}
+		}
+		</script>
+		
+		<br>
+	
+		<a href="#" onclick="toggleVisibility('hiddenText020-b'); return false;" style="
+    		display: block;
+			font-weight: bold;
+  			color: #000000;
+  			background-color: #f6aa1c;
+  			border: 1px solid #ffffff;
+ 			border-radius: 10px;
+  			text-align: center;
+  		
+ 			width: auto;
+			height: 70px ">
+  			
+			<strong><br> 2. &emsp;<i>Usar prototipos o diagramas para visualizar las ideas del usuario.</i></strong>
+		</a>
+		<div style="display: none; margin-top: 10px;" id="hiddenText020-b">
+			<p><br>
+				Por otro lado, Devanbu (2000, p. 3) señala que <strong>el uso de prototipos o diagramas es una herramienta 
+				esencial</strong> para visualizar las ideas del usuario y reducir malentendidos. Muchos clientes no pueden 
+				imaginar un sistema a partir de descripciones verbales, por lo que las representaciones gráficas 
+				—como modelos de casos de uso, diagramas de flujo o pantallas simuladas— permiten validar tempranamente 
+				la interpretación de los requerimientos. De manera similar, el manual de la Universidad Continental 
+				(Wong Durand, 2017, p. 57) indica que los prototipos ayudan a “traducir” los requerimientos no técnicos 
+				a un lenguaje visual accesible, lo cual facilita la definición consensuada del sistema.
+				<br><br>
+			</p>
+		</div>
+		
+		<script>
+		function toggleVisibility(id) {
+			var element = document.getElementById(id);
+			if (element.style.display === 'none') {
+				element.style.display = 'block';
+			} else {
+				element.style.display = 'none';
+			}
+		}
+		</script>
+
+		<br>
+
+		<a href="#" onclick="toggleVisibility('hiddenText020-c'); return false;" style="
+    		display: block;
+			font-weight: bold;
+  			color: #000000;
+  			background-color: #f6aa1c;
+  			border: 1px solid #ffffff;
+ 			border-radius: 10px;
+  			text-align: center;
+ 			width: auto;
+			height: 70px ">
+  			
+			<strong><br> 3. &emsp;<i>Redactar cada requerimiento con un formato uniforme, breve y verificable.</i></strong>
+		</a>
+		<div style="display: none; margin-top: 10px;" id="hiddenText020-c">
+			<p><br>
+				Además, Cristiá (2016, p. 10) subraya que cada requerimiento debe <strong>redactarse de forma clara, 
+				breve y verificable.</strong> Esto significa que todo enunciado debe poder ser probado o validado, evitando 
+				términos ambiguos como “rápido” o “fácil de usar”. Berezin (1999, p. 5) coincide en que una 
+				redacción uniforme y simple mejora la comprensión entre todos los actores del proyecto. De hecho, 
+				recomienda emplear un formato estándar para cada requerimiento, incluyendo un identificador, 
+				una descripción precisa y los criterios de aceptación. Según la Universidad Continental 
+				(Wong Durand, 2017, p. 63), esta práctica evita contradicciones y asegura la trazabilidad posterior 
+				durante la validación del software.
+
+			</p>
+		</div>
+		
+		<script>
+		function toggleVisibility(id) {
+			var element = document.getElementById(id);
+			if (element.style.display === 'none') {
+				element.style.display = 'block';
+			} else {
+				element.style.display = 'none';
+			}
+		}
+		</script>
+
+		<br>
+
+		<a href="#" onclick="toggleVisibility('hiddenText020-d'); return false;" style="
+    		display: block;
+			font-weight: bold;
+  			color: #000000;
+  			background-color: #f6aa1c;
+  			border: 1px solid #ffffff;
+ 			border-radius: 10px;
+  			text-align: center;
+  		
+ 			width: auto;
+			height: 70px ">
+  			
+			<strong><br> 4. &emsp;<i>Revisar y aprobar formalmente cada versión del documento de requerimientos.</i></strong>
+		</a>
+		<div style="display: none; margin-top: 10px;" id="hiddenText020-d">
+			<p><br>
+				La revisión y aprobación formal del documento también son aspectos fundamentales. Devanbu (2000, p. 4) 
+				explica que <strong>la definición de requerimientos no finaliza con la redacción</strong>, sino con su validación y 
+				aprobación por todas las partes interesadas. Esta revisión debe realizarse de manera estructurada, 
+				identificando ambigüedades, errores o inconsistencias. Cristiá (2016, p. 11) destaca que la participación 
+				activa del cliente en la revisión garantiza compromiso y reduce conflictos futuros. Así, la aprobación 
+				formal de cada versión del documento genera una línea base confiable sobre la cual se desarrolla todo el 
+				proyecto.
+				<br><br>
+				
+			</p>
+		</div>
+		
+		<script>
+		function toggleVisibility(id) {
+			var element = document.getElementById(id);
+			if (element.style.display === 'none') {
+				element.style.display = 'block';
+			} else {
+				element.style.display = 'none';
+			}
+		}
+		</script>
+
+		<br>
+
+		<a href="#" onclick="toggleVisibility('hiddenText020-e'); return false;" style="
+    		display: block;
+			font-weight: bold;
+  			color: #000000;
+  			background-color: #f6aa1c;
+  			border: 1px solid #ffffff;
+ 			border-radius: 10px;
+  			text-align: center;
+  		
+ 			width: auto;
+			height: 70px ">
+  			
+			<strong><br> 5. &emsp;<i>Mantener trazabilidad entre requerimientos, diseño y pruebas.</i></strong>
+		</a>
+		<div style="display: none; margin-top: 10px;" id="hiddenText020-e">
+			<p><br>
+				Otro elemento clave es <strong>mantener la trazabilidad entre los requerimientos, el diseño y las pruebas.</strong> 
+				Según Wong Durand (2017, p. 70), cada requerimiento debe poder rastrearse desde su origen hasta su 
+				implementación y verificación final, permitiendo gestionar los cambios de forma controlada. Devanbu 
+				(2000, p. 5) sostiene que esta práctica asegura coherencia y evita que se pierda el sentido del 
+				requerimiento original durante el desarrollo. Asimismo, Cristiá (2016, p. 13) indica que una buena 
+				trazabilidad no solo facilita la gestión del cambio, sino que también contribuye a mejorar la calidad 
+				del software y la satisfacción del usuario.
+				<br><br>
+			</p>
+		</div>
+		
+		<script>
+		function toggleVisibility(id) {
+			var element = document.getElementById(id);
+			if (element.style.display === 'none') {
+				element.style.display = 'block';
+			} else {
+				element.style.display = 'none';
+			}
+		}
+		</script>
+		
+		<br>
+
+		<a href="#" onclick="toggleVisibility('hiddenText020-f'); return false;" style="
+    		display: block;
+			font-weight: bold;
+  			color: #000000;
+  			background-color: #f6aa1c;
+  			border: 1px solid #ffffff;
+ 			border-radius: 10px;
+  			text-align: center;
+  		
+ 			width: auto;
+			height: 70px ">
+  			
+			<strong><br> 6. &emsp;<i>Utilizar herramientas o plantillas estándar reconocidas.</i></strong>
+		</a>
+		<div style="display: none; margin-top: 10px;" id="hiddenText020-f">
+			<p><br>
+				Finalmente, Berezin (1999, p. 6) recomienda <strong>utilizar estándares y plantillas reconocidas 
+				internacionalmente</strong>, como la estructura del IEEE 830, para asegurar consistencia y 
+				profesionalismo en la documentación. Dicho estándar establece secciones básicas para todo 
+				documento de requerimientos: introducción, descripción general, requerimientos específicos 
+				y anexos. De acuerdo con Cristiá (2016, p. 15), adoptar formatos estructurados fomenta la 
+				comprensión, facilita la revisión y estandariza el trabajo entre equipos. La Universidad 
+				Continental (Wong Durand, 2017, p. 83) también sugiere el uso de herramientas de gestión 
+				de requerimientos (como Jira o Trello) o plantillas en Word o Excel para mantener 
+				actualizada y accesible la información a lo largo del ciclo de vida del proyecto.
+				<br><br>
+			</p>
+		</div>
+		
+		<script>
+		function toggleVisibility(id) {
+			var element = document.getElementById(id);
+			if (element.style.display === 'none') {
+				element.style.display = 'block';
+			} else {
+				element.style.display = 'none';
+			}
+		}
+		
+		</script>
+		<br><br>
+		En conclusión, las buenas prácticas para una definición exitosa de requerimientos se centran en <strong>la 
+		comunicación efectiva, la claridad documental, la validación continua y la trazabilidad del proceso.</strong> 
+		Tal como señalan las distintas fuentes consultadas, definir correctamente los requerimientos desde 
+		el inicio no solo evita costos futuros, sino que constituye la base del éxito de todo proyecto de 
+		software.
+
+	</h5>
+	<br><br><br><br><br><br><br>	
+</body>
+
+
+<!-- Mirrored from www.siccaad.unam.mx/media/materials/t1186/desarrollo.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Nov 2025 21:26:40 GMT -->
+
+<!-- Mirrored from www.siccaad.unam.mx/media/materials/t1447/desarrollo.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2026 18:57:36 GMT -->
+</html>
